@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul, nav {
+    list-style: none;
+}
+
+.nav-bar {
+    border: 1px solid black;   
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    flex-direction: row;
+    padding: 2rem 2rem;
+}
+
+.link-logo {
+    border: 1px solid black;
+}
+
+ul {
+    height: 100%;
+    display: flex; 
+    justify-content: center;
+}
+
+li {
+    margin: 5px;
+}
