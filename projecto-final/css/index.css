@@ -118,6 +118,11 @@ ul {
     z-index: 100;
 }
 
+.banner .banner-btn:hover {
+    background-color: #afdee0;
+    color: #000;
+}
+
 /* Visão */
 section.visao { 
     width: 100%; 
@@ -218,11 +223,14 @@ p.visao-p {
     text-align: center;
     color: #fff;
     background: #76a9ac;
+    font-weight: bold;
 }
 
 .btn-card:hover {
     background-color: #afdee0;
-    color: #000;
+    color: #000; 
+    font-size: 1.1rem;
+    text-transform: uppercase;
 }
 
 .label-card i {
