@@ -8,73 +8,68 @@ a {
     text-decoration: none
 }
 
-nav, ul {
+nav,
+ul {
     list-style: none;
 }
 
-/* Navegação */ 
+/* Navegação */
 
-.nav-bar {  
+.nav-bar {
     position: absolute;
     top: 0;
-    left: 0; 
+    left: 0;
     width: 100%;
     min-height: 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2.2rem;
-    background-color: #fff;
     z-index: 200;
 }
 
-.nav-bar 
-.logo { 
+.nav-bar .logo {
     padding: 0.5rem;
     display: flex;
-    align-items: center; 
+    align-items: center;
 }
 
-.nav-bar 
-.logo img {
+.nav-bar .logo img {
     margin-right: 0.6rem;
 }
 
-.nav-bar 
-.logo 
-.logo-label {
-    font-size: 1.8rem;
+.nav-bar .logo .logo-label {
+    font-size: 1.6rem;
+    color: #fff;
 }
 
-.nav 
-.nav-ul {
+.nav .nav-ul {
     display: flex;
 }
 
-.nav 
-.nav-ul 
-.nav-itens {
+.nav .nav-ul .nav-itens {
     margin-right: 1rem;
 }
 
-.nav 
-.nav-ul 
-.nav-itens:last-child {
+.nav .nav-ul .nav-itens:last-child {
     margin-right: 0;
 }
 
-.nav 
-.nav-ul 
-.nav-itens 
-a {
+.nav .nav-ul .nav-itens a {
     font-size: 1.2rem;
+    color: #fff;
 }
 
-/* Banner */ 
+.nav .nav-ul .nav-itens a:hover,
+.active-link {
+    color: #76a9ac;
+}
 
-.banner { 
+/* Banner */
+
+.banner {
     width: 100%;
-    height: 100vh; 
+    height: 100vh;
     background-image: url('../images/banner.jpg');
     background-position: top left;
     background-size: cover;
@@ -83,7 +78,8 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center; 
+    text-align: center;
+    padding: 2rem;
 }
 
 .banner .overlay {
@@ -92,13 +88,12 @@ a {
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
-    height: 100%; 
+    height: 100%;
 }
 
-.banner h1, 
-.banner h4 {
+.banner h1,
+.banner p {
     color: #fff;
-    margin-bottom: 1.5rem;
     z-index: 100;
 }
 
@@ -106,15 +101,16 @@ a {
     font-size: 3rem;
 }
 
-.banner h4 {
+.banner p {
     font-size: 1.5rem;
     text-transform: uppercase;
+    margin-bottom: 1.5rem;
 }
 
-.banner .banner-btn { 
-    padding: 1rem 3rem;
+.banner .banner-btn {
+    padding: 1.5rem 3.5rem;
     border-radius: .25rem;
-    background-color: #0066FF;
+    background-color: #76a9ac;
     color: #fff;
     font-size: 1.1rem;
     text-transform: uppercase;
@@ -123,9 +119,41 @@ a {
 }
 
 /* Responsividade */
+@media (max-width: 800px) {
+    .banner h1 {
+        font-size: 2.5rem;
+    }
+
+    .banner p {
+        font-size: 1.6rem;
+    }
+}
+
 
 @media (max-width: 585px) {
     .nav-bar {
         flex-direction: column;
+    }
+
+    .banner {
+        padding: 1rem;
+    }
+
+    .banner h1 {
+        font-size: 2rem;
+    }
+
+    .banner p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 390px) {
+    .banner h1 {
+        font-size: 1.8rem;
+    }
+
+    .banner p {
+        font-size: 1rem;
     }
 }
