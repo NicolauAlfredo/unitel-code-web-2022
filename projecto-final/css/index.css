@@ -118,6 +118,153 @@ ul {
     z-index: 100;
 }
 
+/* Visão */
+section.visao { 
+    width: 100%; 
+    padding: 7rem 4rem;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+}
+
+.visao 
+h1.visao-titulo {
+    color: #2a2929;
+    font-size: 2.8rem;
+}
+
+.visao 
+p.visao-p {
+    color: #2a2929;
+    font-size: 1.3rem; 
+    margin-bottom: 2rem;
+}
+
+.visao
+.visao-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.visao 
+.visao-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 25rem;
+}
+
+.visao 
+.visao-item i {
+    color: #2a2929;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.visao 
+.visao-item p {
+    color: #2a2929;
+    text-align: center;
+}
+
+/* Preços */
+.precos {
+    width: 100%;
+    padding: 5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.precos h1 {
+    font-size: 2.8rem;
+    color: #2a2929;
+    margin-bottom: 2rem;
+}
+
+.precos-container {
+    display: flex;
+}
+
+.precos-card { 
+    margin-right: 2rem;
+    border: 1px solid #d2cece;
+    width: 15rem;
+    height: 20rem;
+    border-radius: .25rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 2px 2px 10px -10px rgb(106, 103, 203);
+}
+
+.label-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.label-card p {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.btn-card { 
+    border: 1px solid #76a9ac;
+    padding: 2rem 4rem;
+    border-radius: .25rem;
+    text-align: center;
+    color: #fff;
+    background: #76a9ac;
+}
+
+.btn-card:hover {
+    background-color: #afdee0;
+    color: #000;
+}
+
+.label-card i {
+    color: #80FF80;
+}
+
+/* Rodapé */
+.rodape {
+    width: 100%;
+    padding: 5rem 4rem;
+    background-color: #282828;
+    color: #fff;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.rodape a {
+    color: #fff;
+    text-decoration: none; 
+    margin-right: 0.5rem;
+}
+
+.rodape h4 {
+    margin-bottom: 1rem;
+}
+.rodape .social-midia {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.rodape a:last-child {
+    margin-right: 0;
+}
+
+.rodape .dev {
+
+}
+
 /* Responsividade */
 @media (max-width: 800px) {
     .banner h1 {
@@ -126,6 +273,37 @@ ul {
 
     .banner p {
         font-size: 1.6rem;
+    }
+
+    section.visao {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .visao 
+    .visao-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .visao 
+    .visao-item {
+        margin-bottom: 2rem;
+        max-width: 80%;
+    }
+
+    .visao 
+    .visao-item:last-child {
+        margin-bottom: 0;
+    }
+
+    .precos-container {
+        flex-direction: column;
+    }
+
+    .precos-card {
+        margin-right: 0;
+        margin-bottom: 2rem;
     }
 }
 
